@@ -8,9 +8,9 @@
 
 import UIKit
 
-class CollectionUICollectionViewCell: UICollectionViewCell {
+class CustomUICollectionViewCell: UICollectionViewCell {
  
-    var textlabel: UILabel?
+    var textLabel: UILabel?
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
@@ -20,8 +20,8 @@ class CollectionUICollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
         
         //UILableを生成
-        textlabel = UIlabel(frame: CGRect(x: 0, y: 0, width: frame.width, height: frame.height))
-        textlabel?.text = "nil"
+        textLabel = UILabel(frame: CGRect(x: 0, y: 0, width: frame.width, height: frame.height))
+        textLabel?.text = "nil"
         textLabel?.textAlignment = NSTextAlignment.center
         
         //Cellに追加
